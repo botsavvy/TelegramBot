@@ -2,7 +2,7 @@ from gpt4all import GPT4All
 import threading
 
 #select LLM
-model = GPT4All("gpt4all-13b-snoozy-q4_0.gguf")
+model = GPT4All("orca-mini-3b-gguf2-q4_0.gguf")
 
 isRunning = False
 persistance = False
