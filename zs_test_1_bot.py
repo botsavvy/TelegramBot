@@ -1,7 +1,7 @@
+import os
+from dotenv import load_dotenv
 import telebot
 import requests
-
-
 def get_daily_horoscope(sign: str, day: str) -> dict:
     """Get daily horoscope for a zodiac sign.
     Keyword arguments:
@@ -17,7 +17,13 @@ def get_daily_horoscope(sign: str, day: str) -> dict:
     return response
 
 # Access the BOT_TOKEN environment variable
-BOT_TOKEN = '6997327762:AAG0TTlHe0Rx2A5w9OsKJRYYvIGqtBXDLqA'
+
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Get the API key from the environment
+BOT_TOKEN = os.getenv("TELEGRAM_API_KEY")
 
 # Now you can use bot_token in your code
 bot = telebot.TeleBot(BOT_TOKEN)

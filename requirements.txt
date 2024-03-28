@@ -1,0 +1,16 @@
+certifi==2024.2.2
+cffi==1.16.0
+charset-normalizer==3.3.2
+geographiclib==2.0
+geopy==2.4.1
+h3==3.7.7
+idna==3.6
+numpy==1.26.4
+pycparser==2.21
+pyTelegramBotAPI==4.16.1
+python-dotenv==1.0.1
+pytz==2024.1
+requests==2.31.0
+telebot==0.0.5
+timezonefinder==6.5.0
+urllib3==2.2.1
